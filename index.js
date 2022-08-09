@@ -1,5 +1,4 @@
 console.log("Code Starts")
-console.time();
 
 //Toss The Game
 let turn = document.getElementById('turn');
@@ -31,9 +30,8 @@ function randNumGen(){
 //Face
 function faceGen(){
 context.beginPath();
-context.fillStyle ="rgb(209, 169, 169)" //"bisque"; // #ffe4c4
+context.fillStyle ="rgb(209, 169, 169)" 
 context.arc(170, 50, 15, 0, Math.PI * 2, true); // draw circle for head
-// (x,y) center, radius, start angle, end angle, anticlockwise
 context.fill();
 }
 
@@ -454,7 +452,3 @@ let resetBtn = document.getElementById('resetbtn');
 function reset(){
     location.reload();
 }
-//Button Color Animation 
-generateBtn.addEventListener('hover',function(){
-    generateBtn.style.color = "black";
-})
